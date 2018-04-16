@@ -28,10 +28,10 @@ class APIManager {
         return _sharedInstance
     }
     
-    func requestGooglePlaceApi(with url: String, webService: GoogleWebService, success: @escaping ((_ isSuccess: Bool, _ data: Any) -> Void), failure: @escaping failureHandler) -> Request {
+    func requestGooglePlaceApi(with url: String, webService: GoogleWebService, success: @escaping ((_ isSuccess: Bool, _ data: Any) -> Void), failure: @escaping failureHandler) {
         
         
-        return Alamofire.request(url, parameters: nil).responseJSON { response in
+        Alamofire.request(url, parameters: nil).responseJSON { response in
             
             if (response.result.isSuccess) {
                 

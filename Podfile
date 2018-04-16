@@ -8,5 +8,5 @@ target 'EasyRoad-Assignment' do
   pod 'GoogleMaps'
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  
+
 end

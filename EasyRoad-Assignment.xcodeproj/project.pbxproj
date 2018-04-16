@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67FEEF4120852495008C8D0C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FEEF4020852495008C8D0C /* Utilities.swift */; };
 		7424A386BA32897245D90288 /* Pods_EasyRoad_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A62EC6A5EF28AA6C9B7708 /* Pods_EasyRoad_Assignment.framework */; };
 		B14B9E0A2083DBE900783B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B9E092083DBE900783B4E /* AppDelegate.swift */; };
 		B14B9E0C2083DBE900783B4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B9E0B2083DBE900783B4E /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		66A62EC6A5EF28AA6C9B7708 /* Pods_EasyRoad_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyRoad_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FEEF4020852495008C8D0C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B14B9E062083DBE900783B4E /* EasyRoad-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyRoad-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14B9E092083DBE900783B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14B9E0B2083DBE900783B4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				B14B9E092083DBE900783B4E /* AppDelegate.swift */,
 				B14B9E0B2083DBE900783B4E /* ViewController.swift */,
+				67FEEF4020852495008C8D0C /* Utilities.swift */,
 				B1B01A0F2084DC2500A7F961 /* APIManager.swift */,
 				B14B9E0D2083DBE900783B4E /* Main.storyboard */,
 				B14B9E102083DBE900783B4E /* Assets.xcassets */,
@@ -102,8 +105,8 @@
 				B14B9E022083DBE900783B4E /* Sources */,
 				B14B9E032083DBE900783B4E /* Frameworks */,
 				B14B9E042083DBE900783B4E /* Resources */,
-				41C18715BC96D58856F948EB /* [CP] Embed Pods Frameworks */,
-				B3945B4DA9BD009315C31D68 /* [CP] Copy Pods Resources */,
+				A1CCD79C6142545E2F65B459 /* [CP] Embed Pods Frameworks */,
+				4CB4A6A573E87E48E2A3CA4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +165,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41C18715BC96D58856F948EB /* [CP] Embed Pods Frameworks */ = {
+		465345F6C3024C5C9C1194D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyRoad-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB4A6A573E87E48E2A3CA4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyRoad-Assignment/Pods-EasyRoad-Assignment-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyRoad-Assignment/Pods-EasyRoad-Assignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1CCD79C6142545E2F65B459 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,42 +221,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyRoad-Assignment/Pods-EasyRoad-Assignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		465345F6C3024C5C9C1194D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasyRoad-Assignment-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3945B4DA9BD009315C31D68 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EasyRoad-Assignment/Pods-EasyRoad-Assignment-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyRoad-Assignment/Pods-EasyRoad-Assignment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,6 +230,7 @@
 			files = (
 				B1B01A102084DC2500A7F961 /* APIManager.swift in Sources */,
 				B14B9E0C2083DBE900783B4E /* ViewController.swift in Sources */,
+				67FEEF4120852495008C8D0C /* Utilities.swift in Sources */,
 				B14B9E0A2083DBE900783B4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

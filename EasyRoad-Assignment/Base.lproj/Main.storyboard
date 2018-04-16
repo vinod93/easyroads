@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AppleSDGothicNeo.ttc">
-            <string>AppleSDGothicNeo-Bold</string>
-            <string>AppleSDGothicNeo-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hF0-kc-XG4">
-                                <rect key="frame" x="65" y="313" width="70" height="40"/>
+                                <rect key="frame" x="55" y="313" width="70" height="40"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xs9-aj-oMj">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
@@ -46,14 +40,14 @@
                                                 </visualEffectView>
                                             </subviews>
                                         </view>
-                                        <blurEffect style="light"/>
+                                        <blurEffect style="dark"/>
                                     </visualEffectView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2W-u0-Yh7">
                                         <rect key="frame" x="8" y="0.0" width="54" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                         <state key="normal" title="Search">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="searchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcz-wi-Xz6"/>
@@ -81,26 +75,26 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="juf-Ps-cYv">
-                                <rect key="frame" x="50" y="321" width="25" height="25"/>
+                                <rect key="frame" x="40" y="321" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Rhl-dv-blg"/>
                                     <constraint firstAttribute="width" constant="25" id="uzj-xS-Mfg"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4k-Lf-7Gq">
-                                <rect key="frame" x="130" y="0.0" width="245" height="667"/>
+                                <rect key="frame" x="120" y="0.0" width="255" height="667"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG7-hd-uRm">
-                                        <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="667"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JLN-Pq-Al5">
-                                            <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="667"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHO-CB-Tod">
-                                                    <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="255" height="667"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Y8G-6K-q3b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="245" height="667"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="255" height="667"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                     <vibrancyEffect>
@@ -109,28 +103,28 @@
                                                 </visualEffectView>
                                             </subviews>
                                         </view>
-                                        <blurEffect style="light"/>
+                                        <blurEffect style="dark"/>
                                     </visualEffectView>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="4qx-KG-3kZ">
-                                        <rect key="frame" x="0.0" y="20" width="245" height="56"/>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for destination" translatesAutoresizingMaskIntoConstraints="NO" id="4qx-KG-3kZ">
+                                        <rect key="frame" x="0.0" y="20" width="255" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KRJ-p7-fzc">
-                                        <rect key="frame" x="0.0" y="76" width="245" height="591"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="KRJ-p7-fzc">
+                                        <rect key="frame" x="0.0" y="76" width="255" height="591"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="JGd-AP-FRP" style="IBUITableViewCellStyleDefault" id="JUC-kf-l4a">
-                                                <rect key="frame" x="0.0" y="28" width="245" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="locationCell" textLabel="JGd-AP-FRP" style="IBUITableViewCellStyleDefault" id="JUC-kf-l4a">
+                                                <rect key="frame" x="0.0" y="55.5" width="255" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JUC-kf-l4a" id="9CX-Ee-5QO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="245" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="255" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JGd-AP-FRP">
-                                                            <rect key="frame" x="15" y="0.0" width="215" height="43.5"/>
+                                                            <rect key="frame" x="15" y="0.0" width="225" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -138,12 +132,16 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="6Uh-x0-hCV"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="zk3-ct-98k"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="QG7-hd-uRm" secondAttribute="trailing" id="3Pi-fl-mvf"/>
-                                    <constraint firstAttribute="width" constant="245" id="675-1b-UMW"/>
+                                    <constraint firstAttribute="width" constant="255" id="675-1b-UMW"/>
                                     <constraint firstAttribute="trailing" secondItem="KRJ-p7-fzc" secondAttribute="trailing" id="8v9-FU-wLE"/>
                                     <constraint firstItem="4qx-KG-3kZ" firstAttribute="top" secondItem="A4k-Lf-7Gq" secondAttribute="top" constant="20" id="Itl-UQ-6DW"/>
                                     <constraint firstItem="QG7-hd-uRm" firstAttribute="top" secondItem="A4k-Lf-7Gq" secondAttribute="top" id="KNh-3S-0ay"/>
@@ -170,8 +168,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="4qx-KG-3kZ" id="kcq-fe-28E"/>
                         <outlet property="searchIndicatorImageView" destination="juf-Ps-cYv" id="Xfz-Gc-NF1"/>
                         <outlet property="searchSideTrailingConstraint" destination="RRT-0N-lZ8" id="6jU-vG-Qmc"/>
+                        <outlet property="tableView" destination="KRJ-p7-fzc" id="hRr-VB-DX2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
